@@ -1,0 +1,92 @@
+name: secure_messaging_app
+description: A secure, real-time messaging application similar to WhatsApp
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # State Management
+  provider: ^6.0.5
+  riverpod: ^2.4.0
+  flutter_riverpod: ^2.4.0
+  
+  # HTTP & API
+  dio: ^5.3.2
+  retrofit: ^4.0.3
+  json_annotation: ^4.8.1
+  
+  # Real-time Communication
+  socket_io_client: ^2.0.3+1
+  
+  # Local Storage
+  shared_preferences: ^2.2.2
+  hive: ^2.2.0
+  hive_flutter: ^1.1.0
+  
+  # UI Components
+  cupertino_icons: ^1.0.2
+  flutter_svg: ^2.0.9
+  cached_network_image: ^3.3.0
+  image_picker: ^1.0.4
+  file_picker: ^6.1.1
+  permission_handler: ^11.0.1
+  
+  # Media & Files
+  video_player: ^2.8.1
+  audioplayers: ^5.2.1
+  path_provider: ^2.1.1
+  
+  # Encryption
+  crypto: ^3.0.3
+  pointycastle: ^3.7.3
+  
+  # WebRTC for calls
+  flutter_webrtc: ^0.9.46
+  
+  # Notifications
+  firebase_core: ^2.24.2
+  firebase_messaging: ^14.7.10
+  flutter_local_notifications: ^16.3.0
+  
+  # QR Code
+  qr_code_scanner: ^1.0.1
+  qr_flutter: ^4.1.0
+  
+  # Utils
+  intl: ^0.18.1
+  url_launcher: ^6.2.1
+  device_info_plus: ^9.1.1
+  package_info_plus: ^4.2.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  build_runner: ^2.4.7
+  retrofit_generator: ^8.0.4
+  json_serializable: ^6.7.1
+  hive_generator: ^2.0.1
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/sounds/
+  
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/Roboto-Regular.ttf
+        - asset: assets/fonts/Roboto-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Roboto-Bold.ttf
+          weight: 700
